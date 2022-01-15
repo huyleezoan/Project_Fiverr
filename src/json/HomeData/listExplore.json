@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Graphics & Design",
+    "img": "./img/Home/Explore/picIcon_1.svg"
+  },
+  {
+    "name": "Digital Marketing",
+    "img": "./img/Home/Explore/picIcon_2.svg"
+  },
+  {
+    "name": "Writing & Translation",
+    "img": "./img/Home/Explore/picIcon_3.svg"
+  },
+  {
+    "name": "Video & Animation",
+    "img": "./img/Home/Explore/picIcon_4.svg"
+  },
+  {
+    "name": "Music & Audio",
+    "img": "./img/Home/Explore/picIcon_5.svg"
+  },
+  {
+    "name": "Programming & Tech",
+    "img": "./img/Home/Explore/picIcon_6.svg"
+  },
+  {
+    "name": "Business",
+    "img": "./img/Home/Explore/picIcon_7.svg"
+  },
+  {
+    "name": "Lifestyle",
+    "img": "./img/Home/Explore/picIcon_8.svg"
+  },
+  { "name": "Data", "img": "./img/Home/Explore/picIcon_9.svg" }
+]

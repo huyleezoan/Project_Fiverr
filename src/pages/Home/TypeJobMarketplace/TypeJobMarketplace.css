@@ -1,0 +1,33 @@
+.typejobmarketplace .lists-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.typejobmarketplace .lists-wrapper .side-menu {
+    display: inline-block;
+    width: 350px;
+}
+
+.typejobmarketplace .lists-wrapper .side-menu li {
+    padding: 0 16px 12px 0;
+}
+
+.typejobmarketplace .lists-wrapper .side-menu .selected-category {
+    padding-top: 0;
+    color: #222325;
+    font-weight: 600;
+}
+
+.typejobmarketplace .lists-wrapper .side-menu li a {
+    color: #7a7d85;
+}
+
+.typejobmarketplace .lists-wrapper .side-menu li a:hover {
+    text-decoration: underline;
+}
+
+.typejobmarketplace .lists-wrapper .main-content {
+    max-width: 1008px;
+    margin-left: 0;flex-wrap: wrap;    flex-direction: row;display: flex;
+}

@@ -1,0 +1,22 @@
+.list-course-result {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 12px;
+}
+
+.list-course-result .result span {
+    color: #000;
+    font-size: 32px;
+    line-height: 150%;
+    font-weight: 700;
+}
+
+.list-course .result-info {
+    color: #7a7d85;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+}
+
+
