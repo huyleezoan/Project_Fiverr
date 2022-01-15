@@ -273,7 +273,7 @@ export default function Footer() {
                   <button className="footer-english">
                     <span
                       className="footer-icon"
-                      style={{ width: "16px", height: "16px" }}
+                      style={{ width: "20px", height: "20px" }}
                     >
                       <svg
                         width={18}
@@ -292,9 +292,13 @@ export default function Footer() {
                   </button>
                 </div>
                 <div>
-                  <button>$ USD</button>
+                  <button className="btn footer-US">
+                    <span >
+                      US$ USD
+                    </span>
+                  </button>
                 </div>
-                <button>
+                <button className="btn m-0 p-0 button-icon">
                   <span style={{ width: 32, height: 32 }} aria-hidden="true">
                     <svg
                       width={32}

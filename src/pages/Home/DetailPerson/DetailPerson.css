@@ -1,0 +1,27 @@
+.detailPerson hr{
+    margin:0;
+    padding:0
+}
+.detailPerson .location , .member-since{
+    font-size: 10px;
+}
+.detailPerson .custom-list{
+    list-style: none;
+    padding-left: 0;
+}
+.detailPerson .custom-list li {
+    position: relative;
+    padding-left: 20px;
+}
+.detailPerson .custom-list li:before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-image:  url('https://cdn0.iconfinder.com/data/icons/ui-16px-perfect-megapack-line/16/82_Add-512.png');
+    background-size:  cover;
+    background-position: center;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}

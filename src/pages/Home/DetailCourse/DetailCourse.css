@@ -1,0 +1,43 @@
+.detailCourse .additional-info {
+    display: flex;
+    margin-bottom: 8px;
+}
+.detailCourse li {
+    list-style-type: none;
+}
+.detailCourse #nav-tab .active {
+    color: #1dbf73;
+    border-bottom: 3px solid #1dbf73;
+    background-color: #fff;
+}
+.detailCourse .nav-cus {
+    background-color: #fafafa;
+    font-size: 16px;
+    font-weight: 700;
+    color: #7a7d85;
+    text-align: center;
+    border: 1px solid #dadbdd;
+    border-left: none;
+    padding: 16px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1 1;
+    cursor: pointer;
+}
+.detailCourse .tab-cus{
+    border: 1px solid #dadbdd;
+    padding: 20px;
+}
+.detailCourse a:hover {
+    color: #7a7d85 !important; 
+    }
+
+.detailCourse .price{
+    font-family: Macan,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 300;   
+}
+.detailCourse .text{
+    color: #1dbf73;
+    font-size: 16px;
+}
+
