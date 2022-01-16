@@ -8,6 +8,8 @@ import DetailCourse from "./pages/Home/DetailCourse/DetailCourse";
 import TypeJobMarketplace from "./pages/Home/TypeJobMarketplace/TypeJobMarketplace";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import DetailPerson from "./pages/Home/DetailPerson/DetailPerson";
+import UserTemplate from "./templates/UserTemplate/UserTemplate";
+import SignIN from "./pages/SignIN/SignIN";
 export const history = createBrowserHistory();
 
 function App() {
@@ -27,6 +29,12 @@ function App() {
             path="/typejobmarketplace/:id"
             Component={TypeJobMarketplace}
           />
+          <UserTemplate
+            exact
+            path="/usertemplate"
+            Component={SignIN}
+          />
+          
           <HomeTemplate
             exact
             path="/detailperson/:id"
