@@ -112,7 +112,3 @@ export default function DetailCourse(props) {
         </div>
     );
 }
-
-
-
-
