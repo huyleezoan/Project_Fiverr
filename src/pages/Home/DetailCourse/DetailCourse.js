@@ -5,25 +5,28 @@ import "./DetailCourse.css";
 import { Rate } from 'antd';
 import Content from "./Content";
 export default function DetailCourse(props) {
-  const { detailCourse } = useSelector(
-    (rootReducer) => rootReducer.QuanLyCongViecReducer
-  );
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(getThongTinChiTietCongViec(props.match.params.id));
-  }, []);
-  console.log(detailCourse);
-  return (
-    <div className="container_all detailCourse">
-       <h1>Result fot "{detailCourse.type?.name}"</h1>
-       <div className="row ">
+    const { detailCourse } = useSelector(
+        (rootReducer) => rootReducer.QuanLyCongViecReducer
+    );
+    const dispatch = useDispatch();
+    useEffect(() => {
+        dispatch(getThongTinChiTietCongViec(props.match.params.id));
+    }, []);
+    console.log(detailCourse);
+    return (
+        <div className="container_all detailCourse">
+            <h1>Result fot "{detailCourse.type?.name}"</h1>
+            <div className="row ">
                 <div className="col-8">
                     <h4>{detailCourse?.name}</h4>
                     <div>
-                        <span className="mr-3">user.name</span>
 
-                        <button></button>
-                        <Rate defaultValue={detailCourse.rating} />
+
+                        <button  classname="btn">
+                            <a href="#seller" classname="text-primary">user.name</a>
+                        </button>
+
+                        <Rate disabled defaultValue={detailCourse?.rating} />
                     </div>
                     <img className="img-fluid w-100 mt-4" src={detailCourse?.image} alt=".." />
 
@@ -77,7 +80,7 @@ export default function DetailCourse(props) {
                         <h5>{detailCourse?.type?.name}</h5>
                         <p>{detailCourse?.subType?.name}</p>
                     </div>
-                    <h2 className="mt-4"> About The Seller</h2>
+                    <h2 className="mt-4" id="seller"> About The Seller</h2>
                     <div className="row">
                         <div className="col-4">img</div>
                         <div className="col-8">
@@ -95,19 +98,19 @@ export default function DetailCourse(props) {
                     </nav>
                     <div className="tab-content tab-cus" id="nav-tabContent">
                         <div className="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                            <Content value={{'price': detailCourse?.price,'day':1,'page':1,'name':"Basic"}}/>
+                            <Content value={{ 'price': detailCourse?.price, 'day': 1, 'page': 1, 'name': "Basic" }} />
                         </div>
                         <div className="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                        <Content value={{'price': detailCourse?.price,'day':2,'page':5,'name':"Standard"}}/>
+                            <Content value={{ 'price': detailCourse?.price, 'day': 2, 'page': 5, 'name': "Standard" }} />
                         </div>
                         <div className="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                        <Content value={{'price': detailCourse?.price,'day':3,'page':10,'name':"Premium"}}/>
+                            <Content value={{ 'price': detailCourse?.price, 'day': 3, 'page': 10, 'name': "Premium" }} />
                         </div>
                     </div>
                 </div>
             </div>
-    </div>
-  );
+        </div>
+    );
 }
 
 
