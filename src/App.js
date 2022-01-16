@@ -9,6 +9,7 @@ import TypeJobMarketplace from "./pages/Home/TypeJobMarketplace/TypeJobMarketpla
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import DetailPerson from "./pages/Home/DetailPerson/DetailPerson";
 export const history = createBrowserHistory();
+
 function App() {
   return (
     <div className="App">

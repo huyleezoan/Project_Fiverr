@@ -109,6 +109,7 @@ export default function DetailCourse(props) {
                     </div>
                 </div>
             </div>
+            <button></button>
         </div>
     );
 }
