@@ -10,6 +10,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import DetailPerson from "./pages/Home/DetailPerson/DetailPerson";
 import UserTemplate from "./templates/UserTemplate/UserTemplate";
 import SignIN from "./pages/SignIN/SignIN";
+import SignUP from "./pages/SingUP/SignUP";
 export const history = createBrowserHistory();
 
 function App() {
@@ -31,8 +32,13 @@ function App() {
           />
           <UserTemplate
             exact
-            path="/usertemplate"
+            path="/usertemplate/signin"
             Component={SignIN}
+          />
+          <UserTemplate
+            exact
+            path="/usertemplate/signup"
+            Component={SignUP}
           />
           
           <HomeTemplate
