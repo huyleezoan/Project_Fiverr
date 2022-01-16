@@ -21,7 +21,7 @@ export default function InforUser(props) {
         <div>
             <div className="card p-4">
 
-                <img src={renderAvatar(user.avatar)} className="mx-auto w-50 img-fluid card-img-top rounded-circle" alt="..." />
+                <img src={renderAvatar(user?.avatar)}  className="mx-auto w-50  img-fluid card-img-top rounded-circle" alt="..." />
 
                 <div className="card-body pb-1">
                     <h5 className="card-title text-center m-0">{user.name}</h5>

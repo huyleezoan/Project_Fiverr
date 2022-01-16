@@ -34,10 +34,14 @@ export default function DetailCourse(props) {
         getUser(detailCourse.userCreated)
         console.log('didmout update');
     }, [detailCourse]);
-  
+    
+    const renderAvatar = (value) => {
+        if (!value) return "https://previews.123rf.com/images/flatdesign/flatdesign2009/flatdesign200900382/154641650-user-icon-vector-people-icon-profile-vector-icon-person-illustration-business-user-icon-users-group-.jpg"
+        return value
+    }
     
     
-
+    console.log('rating',detailCourse?.rating)
     console.log('detailPerson',detailPerson)
     return (
         <div className="container_all detailCourse">
@@ -45,7 +49,11 @@ export default function DetailCourse(props) {
             <div className="row ">
                 <div className="col-8">
                     <h4>{detailCourse?.name}</h4>
-                    <div>
+                    <div>   
+                            <span>
+                            <img src={renderAvatar(detailPerson?.avatar)} style={{ width: '35px', height: '35px'}}className="mx-auto  rounded-circle" alt="img" />
+                            </span>
+
                             <button className="btn">
                             <a href="#seller" classname="text-dark"> {detailPerson.name}</a>
                             </button>
@@ -149,7 +157,9 @@ export default function DetailCourse(props) {
                         About The Seller
                     </h2>
                     <div className="row">
-                        <div className="col-4">img</div>
+                        <div className="col-4">
+                        <img src={renderAvatar(detailPerson.avatar)} className="mx-auto w-50 img-fluid card-img-top rounded-circle" alt="..." />
+                        </div>
                         <div className="col-8">
                             <p>{detailCourse?.name}</p>
                         </div>
